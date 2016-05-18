@@ -6,6 +6,9 @@ with some made up data for individuals and their addresses
 ###Create Keyspace and Tables
 
 ####Create the keyspace
+```cql
+CREATE KEYSPACE playground WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'}  AND durable_writes = true;
+```
 
 ####Create the table
 
